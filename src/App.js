@@ -1,7 +1,7 @@
 import './App.css';
 import HomePage from './pages/home-page/home-page.jsx'
 
-import { Route } from 'react-router-dom';
+import { Switch,Route } from 'react-router-dom';
 
 const HatsPage = ()=>{
   <div className="">
@@ -11,9 +11,11 @@ const HatsPage = ()=>{
 function App() {
   return (
     <div >
-      <Route exact path='/' component={HomePage}></Route>
+      /*As long as one route matches is okay and you can stop there */
+      <Switch>
+      <Route exact path='/' component={HomePage}></Route>/*exact ,eans that the path should be exactly / before rendering */
       <Route exact path='/hats' component={HatsPage}></Route>
-
+      </Switch>
     </div>
   );  
 }
