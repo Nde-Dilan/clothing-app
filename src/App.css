@@ -6,3 +6,8 @@ body{
   padding: 20px 60px;
   font-family: Consolas;
 }
+
+a{
+  text-decoration: none;
+  color: black;
+}
