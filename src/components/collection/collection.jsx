@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './collection.scss';
+import CollectionItem from '../collection-item/collection-item.jsx';
 
 const Collection = ({title,items})=>{
     return (
